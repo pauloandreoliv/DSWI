@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crie uma Nova Conta</title>
+</head>
+<body>
+  <header>
+      <h1>Crie uma Nova Conta</h1>
+  </header>
+  <main>
+      <form method="post" action="/criar">
+          <fieldset>
+              <h2>Conta</h2>
+              <ul>
+                  <li>
+                      <label for="nome">Nome:</label>
+                      <input type="text" id="nome" name="nome">
+                  </li>
+                  <br>
+                  <li>
+                      <label for="sobrenome">Sobreome:</label>
+                      <input type="text" id="sobrenome" name="sobrenome">
+                  </li>
+                  <br>
+                  <li>
+                      <label for="email">E-mail:</label>
+                      <input type="email" id="email" name="email">
+                  </li>
+                  <br>
+                  <li>
+                      <label for="senha">Senha:</label>
+                      <input type="password" id="senha" name="senha">
+                  </li>
+                  <br>
+                  <li>
+                      <label for="repita_senha">Repita a senha:</label>
+                      <input type="password" id="repita_senha" name="repita_senha">
+                  </li>
+              </ul>
+          </fieldset>
+          <fieldset>
+              <h2>Endereço</h2>
+              <ul>
+                  <li>
+                      <label for="logradouro">Logradouro:</label>
+                      <input type="text" id="logradouro" name="logradouro">
+                  </li>
+                  <br>
+                  <li>
+                      <label for="complemento">Complemento:</label>
+                      <input type="complemento" id="complemento" name="complemento">
+                  </li>
+                  <br>
+                  <li>
+                      <label for="cidade">Cidade:</label>
+                      <input type="text" id="cidade" name="cidade">
+                  </li>
+                  <br>
+                  <li>
+                      <label for="estado">Estado:</label>
+                      <select id="estado" name="estado">
+                          <option value="pernambuco">Pernambuco</option>
+                      </select>
+                  </li>
+                  <br>
+                  <li>
+                      <label for="cep">CEP:</label>
+                      <input type="text" id="cep" name="cep">
+                  </li>
+              </ul>
+          </fieldset>
+          <fieldset>
+              <h2>Perfil</h2>
+              <ul>
+                  <li>
+                      <label for="foto">Foto:</label>
+                      <input type="file" id="foto" name="foto">
+                      <p>Tamanho máximo de 700kb, JPG, PNG, GIF</p>
+                  </li>
+                  <br>
+                  <li>
+                      <label for="nome_perfil">Nome:</label>
+                      <input type="text" id="nome_perfil" name="nome_perfil">
+                  </li>
+                  <br>
+                  <li>
+                      <label for="site">Site:</label>
+                      <input type="url" id="site" name="site">
+                      <p>Tem um site ou blog? Coloque o endereço aqui</p>
+                  </li>
+                  <br>
+                  <li>
+                      <label for="biografia">Biografia:</label>
+                      <textarea id="biografia" name="biografia"></textarea>
+                  </li>
+                  <br>
+                  <li>
+                      <span>Gênero:</span>
+                      <label for="masculino">Masculino</label>
+                      <input type="checkbox" id="masculino" name="masculino" value="Masculino">
+                      <label for="feminino">Feminino</label>
+                      <input type="checkbox" id="feminino" name="feminino" value="Feminino">
+                      <label for="Outro">Outro</label>
+                      <input type="checkbox" id="outro" name="outro" value="Outro">
+                  </li>
+              </ul>
+          </fieldset>
+          <fieldset>
+              <h2>E-mails</h2>
+              <ul>
+                  <li>
+                      <input type="checkbox" id="emails_usuarios" name="emails_usuarios" value="emails_usuarios">
+                      <label for="emails_usuarios">Tudo bem em enviar e-mails com mensagens de outros usuários.</label>
+                  </li>
+                  <br>
+                  <li>
+                      <input type="checkbox" id="emails_promocoes" name="emails_promocoes" value="emails_promocoes">
+                      <label for="emails_promocoes">Tudo bem em enviar e-mails ocasionais com promoções sobre outros produtos.</label>
+                  </li>
+              </ul>
+          </fieldset>
+          <fieldset>
+              <input type="submit" value="Criar conta">
+          </fieldset>
+      </form>
+  </main>
+</body>
+</html>
