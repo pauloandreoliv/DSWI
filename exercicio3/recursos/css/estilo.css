@@ -74,6 +74,7 @@ section h1 {
 
 #logo {
   transition: 0.3s;
+  cursor: pointer;
 }
 
 #logo:hover {
