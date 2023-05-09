@@ -11,15 +11,17 @@ body {
 nav {
   width: 100vw;
   top: 0;
+  z-index: 2;
   position: fixed;
   display: flex;
   justify-content: center;
   background-color: white;
+  box-shadow: -1px 1px 20px #0000000a;
 }
 
 nav a {
   padding: 10px 6px 10px 6px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   text-decoration: none;
   color: #3f92c9;
@@ -35,7 +37,31 @@ section {
   text-align: justify;
 }
 
-#missao {
+section h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.imagem {
+  display: flex;
+  justify-content: center;
+}
+
+.icone {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  border-radius: 50%;
+  filter: drop-shadow(2px 0 0 #3f92c9) drop-shadow(-2px 0 0 #3f92c9) drop-shadow(0 2px 0 #3f92c9) drop-shadow(0 -2px 0 #3f92c9);
+  transition: 0.8s;
+}
+
+.icone:hover{
+  background-color: #3f92c9;
+}
+
+#missao, #servicos, footer {
   background-color: #3f92c9;
   color: white;
 }
