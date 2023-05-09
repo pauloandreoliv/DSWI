@@ -49,6 +49,11 @@ section h1 {
   letter-spacing: 10px;
 }
 
+
+section p {
+  line-height: 1.6;
+}
+
 .imagem {
   display: flex;
   justify-content: center;
