@@ -1,3 +1,7 @@
+:root {
+  --cor-principal: #3f92c9;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -5,7 +9,7 @@ html {
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  color: #3f92c9;
+  color: var(--cor-principal);
 }
 
 nav {
@@ -24,10 +28,12 @@ nav a {
   font-size: 18px;
   font-weight: 300;
   text-decoration: none;
-  color: #3f92c9;
+  color: var(--cor-principal);
+  transition: 0.25s;
 }
 
 nav a:hover {
+  font-weight: 600;
   border-bottom: 2px solid #40B3FF;
 }
 
@@ -53,17 +59,25 @@ section h1 {
   height: 200px;
   cursor: pointer;
   border-radius: 50%;
-  filter: drop-shadow(2px 0 0 #3f92c9) drop-shadow(-2px 0 0 #3f92c9) drop-shadow(0 2px 0 #3f92c9) drop-shadow(0 -2px 0 #3f92c9);
+  filter: drop-shadow(2px 0 0 var(--cor-principal)) drop-shadow(-2px 0 0 var(--cor-principal)) drop-shadow(0 2px 0 var(--cor-principal)) drop-shadow(0 -2px 0 var(--cor-principal));
   transition: 0.8s;
 }
 
 .icone:hover{
-  background-color: #3f92c9;
+  background-color: var(--cor-principal);
 }
 
 #missao, #servicos, footer {
-  background-color: #3f92c9;
+  background-color: var(--cor-principal);
   color: white;
+}
+
+#logo {
+  transition: 0.3s;
+}
+
+#logo:hover {
+  opacity: 0.5;
 }
 
 footer {
